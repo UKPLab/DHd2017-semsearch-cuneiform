@@ -17,7 +17,7 @@ This project contains the accompanying code for the following publication:
 
 A demo of the tool is available [here](http://semsearch.ukp.informatik.tu-darmstadt.de).
 
-This work has been carried in collabroation with the Department for [Ancient Philology](http://www.ao.altertumswissenschaften.uni-mainz.de) at the Johannes Gutenberg-Universität Mainz.
+This work has been carried out in collabroation with the Department for [Ancient Philology](http://www.ao.altertumswissenschaften.uni-mainz.de) at the Johannes Gutenberg-Universität Mainz.
 
 Contact person: Johannes Daxenberger, daxenberger@ukp.informatik.tu-darmstadt.de
 
@@ -30,65 +30,48 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
 
-<!--
-
-## Project structure
-**(change this as needed!)**
-
-* `folder/a` -- this folder contains xxx
-* `folder/b` -- interesting files here
-* ...
-* `data/xxx` -- my amazing data
 
 ## Requirements
-**(change this as needed!)**
 
-* Java x.x and higher
+* Java 7 or higher
 * Maven
-* 64-bit Linux versions
-* Windows x
-* XX GB RAM
+* Tested under Windows 7
 
 ## Installation
-**(change this as needed!)**
 
-* Step 1
-
-```
-$nice_command
-
-$some_script.sh
-```
-
-* Step 2
-
-Do something and something
-
-* ...
-* Step n
-
+ * You need a Uby database to run the experiments
+ * All other dependencies should be handeled via Maven.
 
 ## Running the experiments
-**(change this as needed!)**
 
+The main class is:
 ```
-$cd bla/bla/bla
-$some_cool_commands_here
+RunPipeline
 ```
-
-### Expected results
-**(change this as needed!)**
-
-After running the experiments, you should expect the following results:
-
-(Feel free to describe your expected results here...)
 
 ### Parameter description
-**(change this as needed!)**
 
-* `x, --xxxx`
-  * This parameter does something nice
-...
-* `z, --zzzz`
-  * This parameter does something even nicer
-  -->
+* `OUTPUT_DESTINATION`
+  * where to write the output
+* `INPUT_LOCATION`
+  * location of the ODT-Files
+* `ALTERNATIVE_WRITING_DATASET` 
+  * location of the alternative writings dictionary (opt.)
+* `HYPERNYMS_DATASET`
+  * location of the hypernyms dictionary (opt.)
+* `INPUT_FILE_LANGUAGE`
+  * language of the files to be processed
+  * Supported Languages: German (de), English (en), French (fr), Italian (it)
+* `STOP_WORD_LIST_LOCATION`
+  * stopword list location
+* `TRANSLITERATION_VERSION`
+  * The version of the transliteration. Usually double dash "--" indicates the master transliteration. But some files contain "-het", or "-akk"
+
+For Uby:
+
+* `DB_URL`
+* `DB_DRIVER`
+* `DB_DRIVER_NAME`
+* `DB_USERNAME`
+* `DB_PASSWORD`
+
