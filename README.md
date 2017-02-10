@@ -19,6 +19,8 @@ A demo of the tool is available [here](http://semsearch.ukp.informatik.tu-darmst
 
 This work has been carried out in collabroation with the Department for [Ancient Philology](http://www.ao.altertumswissenschaften.uni-mainz.de) at the Johannes Gutenberg-Universität Mainz.
 
+To get access to the Hittite original data needed for this running this pipeline, please contact the first author of the abobe publication.
+
 Contact person: Johannes Daxenberger, daxenberger@ukp.informatik.tu-darmstadt.de
 
 https://www.ukp.tu-darmstadt.de/
@@ -39,14 +41,14 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 
 ## Installation
 
- * You need a Uby database to run the experiments
- * All other dependencies should be handeled via Maven.
+ * You need a (local) Uby database to run the experiments. See e.g. [here](https://zoidberg.ukp.informatik.tu-darmstadt.de/jenkins/job/Uby%20Documentation%20(GitHub)/de.tudarmstadt.ukp.uby$de.tudarmstadt.ukp.uby.doc-asl/doclinks/1/#_how_to_import_the_uby_mysql_dump) or the general [Uby documentation](https://dkpro.github.io/dkpro-uby/)
+ * All other dependencies should be handeled via Maven or be present on the class path.
 
 ## Running the experiments
 
 The main class is:
 ```
-RunPipeline
+src/main/java/de/tudarmstadt/ukp/semsearch/cuneiform/dhd2017/main/RunPipeline.java
 ```
 
 ### Parameter description
@@ -54,7 +56,7 @@ RunPipeline
 * `OUTPUT_DESTINATION`
   * where to write the output
 * `INPUT_LOCATION`
-  * location of the ODT-Files
+  * location of the ODT-Files (examples: `src/test/resources/docs`)
 * `ALTERNATIVE_WRITING_DATASET` 
   * location of the alternative writings dictionary (opt.)
 * `HYPERNYMS_DATASET`
@@ -63,11 +65,11 @@ RunPipeline
   * language of the files to be processed
   * Supported Languages: German (de), English (en), French (fr), Italian (it)
 * `STOP_WORD_LIST_LOCATION`
-  * stopword list location
+  * stopword list location (examples: `src/main/resources/stopwords/`)
 * `TRANSLITERATION_VERSION`
   * The version of the transliteration. Usually double dash "--" indicates the master transliteration. But some files contain "-het", or "-akk"
 
-For Uby:
+Additional Parameters for Uby:
 
 * `DB_URL`
 * `DB_DRIVER`
