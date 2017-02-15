@@ -19,7 +19,7 @@ A demo of the tool is available [here](http://semsearch.ukp.informatik.tu-darmst
 
 This work has been carried out in collabroation with the Department for [Ancient Philology](http://www.ao.altertumswissenschaften.uni-mainz.de) at the Johannes Gutenberg-Universität Mainz.
 
-To get access to the Hittite original data needed for this running this pipeline, please contact the first author of the abobe publication.
+To get access to the Hittite original data needed for this running this pipeline, please contact the first author of the above publication.
 
 Contact person: Johannes Daxenberger, daxenberger@ukp.informatik.tu-darmstadt.de
 
